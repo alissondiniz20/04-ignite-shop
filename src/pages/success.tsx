@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { styled } from "../styles";
+import { ImageContainer, SuccessContainer } from "../styles/pages/success";
 
 const Button = styled("button", {
   backgroundColor: "$green300",
@@ -15,11 +17,20 @@ const Button = styled("button", {
   },
 });
 
-export default function Sucess() {
+export default function Success() {
   return (
-    <Button>
-      <span>Testesdsds</span>
-      Enviar
-    </Button>
+    <SuccessContainer>
+      <h1>Compra efetuada!</h1>
+
+      <ImageContainer></ImageContainer>
+
+      <p>
+        Uhuul <strong>Diego Fernandes</strong>, sua{" "}
+        <strong>Camiseta Beyong</strong> the Limits já está a caminho da sua
+        casa.
+      </p>
+
+      <Link href="/">Voltar ao catálogo</Link>
+    </SuccessContainer>
   );
 }
