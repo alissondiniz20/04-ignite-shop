@@ -7,7 +7,6 @@ import {
   ProductContainer,
   ProductDetails,
 } from "../../styles/pages/product";
-import { useRouter } from "next/router";
 import axios from "axios";
 import { useState } from "react";
 
